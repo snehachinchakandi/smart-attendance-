@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This file is no longer the entry layout. DashboardActivity uses activity_dashboard.xml.
+     Kept as empty placeholder to prevent "resource not found" if any legacy reference remains. -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dark" />

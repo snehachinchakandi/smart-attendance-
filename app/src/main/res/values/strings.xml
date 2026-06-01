@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Smart Attendance</string>
+    <string name="register_student">Register Student</string>
+    <string name="mark_attendance">Mark Attendance</string>
+    <string name="view_history">View History</string>
+    <string name="face_detected">Face Detected</string>
+    <string name="no_face">No Face Detected</string>
+    <string name="not_registered">Person Not Registered</string>
+    <string name="attendance_marked">Attendance Marked</string>
+    <string name="already_marked">Already Marked Today</string>
+</resources>
