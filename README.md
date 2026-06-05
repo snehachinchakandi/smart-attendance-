@@ -110,9 +110,8 @@ graph TD
 │       └── overlay/
 │           └── FaceOverlayView.java # Custom canvas scanning animation
 └── app/src/main/assets/
-    ├── det_500m.onnx                # SCRFD Detection ONNX Model (~14MB)
-    ├── w600k_mbf.onnx               # MobileFaceNet/ArcFace ONNX Model (~16MB)
-    └── mobilefacenet.tflite         # TFLite MobileFaceNet Model (~5MB)
+    ├── det_500m.onnx                # SCRFD Detection ONNX Model (~2.5MB)
+    └── w600k_mbf.onnx               # MobileFaceNet/ArcFace ONNX Model (~13.6MB)
 ```
 
 ---
@@ -154,22 +153,14 @@ Once running, you can explore and test the interactive API documentation at:
 
 ---
 
-## 📥 Downloading the ML Model Files
+## 🧠 Included Machine Learning Models
 
-> [!IMPORTANT]
-> The deep learning model files are **not included in this repository** due to their size (~60MB total). You must download them manually and place them in `app/src/main/assets/` before building.
+The required deep learning model files are pre-packaged and included directly in this repository:
 
-| File | Source | Size | Purpose |
+| File | Path | Size | Purpose |
 | :--- | :--- | :--- | :--- |
-| `det_500m.onnx` | [InsightFace Buffalo-SC](https://github.com/deepinsight/insightface/tree/master/model_zoo) | ~2.4 MB | SCRFD Face Detector |
-| `w600k_mbf.onnx` | [InsightFace Buffalo-SC](https://github.com/deepinsight/insightface/tree/master/model_zoo) | ~13 MB | ArcFace Recognizer |
-| `mobilefacenet.tflite` | [sirius-ai/MobileFaceNet](https://github.com/sirius-ai/MobileFaceNet_TF) | ~5 MB | On-device Recognizer |
-| `facenet.tflite` | [davidsandberg/facenet](https://github.com/davidsandberg/facenet) | ~43 MB | FaceNet Embedder |
-
-After downloading, place all files in:
-```
-app/src/main/assets/
-```
+| `det_500m.onnx` | `app/src/main/assets/det_500m.onnx` | ~2.5 MB | SCRFD Face Detector |
+| `w600k_mbf.onnx` | `app/src/main/assets/w600k_mbf.onnx` | ~13.6 MB | ArcFace Recognizer |
 
 ---
 
@@ -185,7 +176,7 @@ app/src/main/assets/
     *   Select **File > Open** and select the root project folder.
     *   Wait for Gradle to download dependencies and sync the project.
 2.  **Ensure Model Assets are Present:**
-    *   Ensure `det_500m.onnx`, `w600k_mbf.onnx`, and `mobilefacenet.tflite` are placed in the `app/src/main/assets` folder.
+    *   The required models (`det_500m.onnx` and `w600k_mbf.onnx`) are already pre-packaged in the `app/src/main/assets/` folder.
 3.  **Build and Run:**
     *   Connect your Android phone via USB (with USB Debugging enabled).
     *   Click the green **Run ▶** button in Android Studio.

@@ -21,3 +21,7 @@ debug_*.jpg
 # ML Model Binary Files (too large for git - download separately)
 *.onnx
 *.tflite
+
+# Active models explicitly tracked in repository
+!app/src/main/assets/det_500m.onnx
+!app/src/main/assets/w600k_mbf.onnx
