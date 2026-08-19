@@ -221,5 +221,20 @@ The required deep learning model files are pre-packaged and included directly in
 
 ---
 
+## 👥 Team Project
+
+This project was developed collaboratively as a team. I contributed to the development, integration, testing, and implementation of various components of the **Smart Face Attendance System**.
+
+### My Contribution
+
+* Contributed to the development and integration of the face recognition-based attendance system.
+* Worked on integrating AI/ML components with the application.
+* Assisted with database and attendance management functionality.
+* Contributed to testing, debugging, and overall system integration.
+
+> This repository is a fork of the original team repository: [chinmayiphosur/smart-attendance-](https://github.com/chinmayiphosur/smart-attendance-).
+
+---
+
 ## 📄 License
 This project is licensed under the MIT License.
